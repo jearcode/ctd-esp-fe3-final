@@ -7,10 +7,8 @@ const Favs = () => {
   
   return (
     <div className="min-h-screen py-8 bg-gray-100 dark:bg-zinc-950 text-black dark:text-white">
-      {/* Título centrado */}
       <h1 className="text-3xl font-bold text-center mb-6">Dentistas Favoritos</h1>
       
-      {/* Grid centrado */}
       <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-lg mx-auto">
           {favDentists.length > 0 ? (

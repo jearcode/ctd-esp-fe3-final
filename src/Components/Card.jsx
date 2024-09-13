@@ -41,7 +41,7 @@ const Card = ({ name, username, id }) => {
       <div className="relative">
         <img
           className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-105"
-          src='/images/bestDoctor.jpg'
+          src='/images/doctor.jpg'
           alt='Doctor'
         />
         <button

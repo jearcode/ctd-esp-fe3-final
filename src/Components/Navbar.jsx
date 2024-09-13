@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context/Context";
 
 const Navbar = () => {
-
+  
   const { changeTheme } = useGlobalContext()
 
   const [isVisible, setIsVisible] = useState(true);
@@ -32,12 +32,10 @@ const Navbar = () => {
           isVisible ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
-        {/* Logo */}
         <NavLink to={"/"}>
           <img src="favicon.ico" alt="Logo" className="w-10 h-10" />
         </NavLink>
 
-        {/* Enlaces */}
         <ul className="flex space-x-6 font-bold">
           <li>
             <NavLink
@@ -83,19 +81,16 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Botón de cambio de tema */}
         <button
           onClick={changeTheme}
           className="relative flex items-center justify-center w-12 h-6 rounded-full bg-stone-900 dark:bg-orange-600 focus:outline-none"
         >
-          {/* Toggle */}
           <span
             className={`absolute left-1 w-4 h-4 bg-white rounded-full transition-transform transform dark:translate-x-6`}
           />
         </button>
       </nav>
 
-      {/* Añadir un espacio debajo del navbar */}
       <div className="pt-20 bg-zinc-200 dark:bg-zinc-900"></div>
     </>
   );

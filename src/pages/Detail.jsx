@@ -42,7 +42,7 @@ const Detail = () => {
         <h1 className="text-2xl font-bold mb-4 text-center">{dentist.name}</h1>
         <img
           className="w-full h-48 object-cover rounded-lg mb-4"
-          src="/images/bestDoctor.jpg"
+          src="/images/doctor.jpg"
           alt="Doctor"
         />
         <div className="space-y-2">
