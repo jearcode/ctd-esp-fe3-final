@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       invert: {
-        50: '0.5',  // Invertir al 50%
+        30: '0.3',
+        50: '0.9' 
       }
     }
   },
